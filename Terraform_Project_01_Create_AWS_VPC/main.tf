@@ -22,7 +22,6 @@ resource "aws_vpc" "first-vpc" {
   }
 }
 
-
 #Creat VPC Subnet
 resource "aws_subnet" "subnet-1" {
   vpc_id     = aws_vpc.first-vpc.id
