@@ -106,7 +106,7 @@ resource "aws_network_interface" "my_nic" {
   }
 }
 
-# 8. Assign an Elastic IP to the Network Interface Created in Step 7
+# 8. Assign an Elastic IP to the Network Interface Created in Step 7 
 resource "aws_eip" "my_eip" {
   domain            = "vpc"  # Use 'domain = "vpc"' instead of 'vpc = true'
   network_interface = aws_network_interface.my_nic.id
