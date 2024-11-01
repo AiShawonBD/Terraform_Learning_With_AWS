@@ -9,7 +9,7 @@ resource "aws_instance" "my_instance" {
   instance_type = var.instance_type
 }
 
-#Change the Variable Value in Different Ways
+#1. Change the Variable Value in Different Ways
 /* Create a file in your project folder called terraform.tfvars. Inside this file, add the variable and set its value. For example: 
 
 instance_type = "t3.micro"
@@ -20,6 +20,12 @@ terraform.tfvars.
 
 This is the easiest way to change variable values in one place without touching the main code. */
 
-#Using Command Line
+#2. Using Command Line
+/*
 You can also set the variable value directly in the command line when you run Terraform:
+
+terraform apply -var="instance_type=t3.micro"
+
+In this example, -var="instance_type=t3.micro" tells Terraform to use "t3.micro" instead of the default.
+Use this method if you only want to change the value temporarily for one run. */
 
