@@ -118,7 +118,7 @@ resource "aws_eip" "my_eip" {
 }
 
 
-# 9. Create Ubuntu Server and Install/Enable Apache2
+# 9. Create Ubuntu Server and Install/Enable Apache2 
 resource "aws_instance" "my_instance" {
   ami                         = "ami-0866a3c8686eaeeba" # Ubuntu Server 20.04 LTS in us-east-1; adjust as needed
   instance_type               = "t2.micro"             # adjust as needed
