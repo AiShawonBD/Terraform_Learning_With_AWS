@@ -161,4 +161,3 @@ output "elastic_ip" {
   value = aws_eip.my_eip.public_ip
   description = "The Elastic IP address attached to the network interface"
 }
-
