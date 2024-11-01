@@ -59,7 +59,7 @@ resource "aws_route_table_association" "subnet_association" {
   route_table_id = aws_route_table.my_route_table.id
 }
 
-# 6. Create Security Group to Allow Ports 22, 80, 443
+# 6. Create Security Group to Allow Ports 22, 80, 443 
 resource "aws_security_group" "my_sg" {
   vpc_id = aws_vpc.my_vpc.id
 
