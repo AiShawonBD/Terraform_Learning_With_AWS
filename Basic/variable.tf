@@ -21,11 +21,11 @@ terraform.tfvars.
 This is the easiest way to change variable values in one place without touching the main code. */
 
 #2. Using Command Line
-/*
-You can also set the variable value directly in the command line when you run Terraform:
+
+#You can also set the variable value directly in the command line when you run Terraform:
 
 terraform apply -var="instance_type=t3.micro"
 
-In this example, -var="instance_type=t3.micro" tells Terraform to use "t3.micro" instead of the default.
+/* In this example, -var="instance_type=t3.micro" tells Terraform to use "t3.micro" instead of the default.
 Use this method if you only want to change the value temporarily for one run. */
 
