@@ -94,7 +94,7 @@ resource "aws_security_group" "my_sg" {
   }
 }
 
-# 7. Create a Network Interface with an IP in the Subnet Created in Step 4
+# 7. Create a Network Interface with an IP in the Subnet Created in Step 4 
 resource "aws_network_interface" "my_nic" {
   subnet_id       = aws_subnet.my_subnet.id
   private_ips     = ["10.0.1.10"]
